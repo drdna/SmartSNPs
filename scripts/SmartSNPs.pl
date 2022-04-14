@@ -55,7 +55,7 @@ while($V = <VCF>) {
 
     $numRecords ++;			# count total variants in file
 
-    ($ID, $pos, $varid, $ref, $alt, $qual, $filter, $info, $format, $genotypeInfo) = split(/\t/, $V, 10);
+    ($ID, $pos, $varid, $refnucl, $altnucl, $qual, $filter, $info, $format, $genotypeInfo) = split(/\t/, $V, 10);
 
     $ID =~ s/.+?(\d+)/$1/;
    
@@ -90,6 +90,8 @@ sub READ_ALIGNSTRINGS {
 
 
 sub REPEATS {
+
+  $repeat = 0;
 
   # look at SNP site in corresponding alignment string
   # reject site if # of alignments is greater than specified cutoff
@@ -150,7 +152,13 @@ sub LOW_COVERAGE {
 
   $allowed = 'yes';
 
+  @genotypeInfo = split(/:/, $genotypeInfo);
+
+  ($ref, $alt) = split(/,/, $genotypeInfo[1]);
+
   if($ref+$alt < $depth) {
+
+    print "$ref+$alt\n";
 
     $lowCoverage ++;
 
