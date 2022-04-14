@@ -34,6 +34,8 @@ The program is run as follows:
 
 **Dependencies**
 
-The **IsUnique.pm** module must be placed in the perl modules path (and be executable).
+The **IsUnique.pm** module must be placed in the perl modules path (and be executable)
+
+A recent **ncbi-blast** installation - minimally: version 2.7.1+
 
 
