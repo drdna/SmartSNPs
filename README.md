@@ -30,7 +30,7 @@ The program is run as follows:
 
   AltRefRatio_cutoff and read_depth_cutoff can be determined empirically by running datasets at different cutoffs and looking for the largest shoulders in the number of heterozyogous/low coverage sites reported.
   
-  Allowable_copy_number (default = 1): this is the maximum allowable copy number of the SNP site in the reference genome. This shoudl be set to 1 for a haploid; 2 for a diploid, etc. Heterozygote filtering is automatically deactivated for values of 2 or more. 
+  Allowable_copy_number (default = 1): this is the maximum allowable copy number of the SNP site in the reference genome. This should be set to 1 for a haploid; 2 for a diploid, etc. Heterozygote filtering is automatically deactivated for values of 2 or more. 
 
 **Dependencies**
 
