@@ -2,7 +2,7 @@
 
 # processes multiple fastq files in a directory
 
-# Usage: ./Batch_bowtie.sh <path/to/index-directory> <readsDirectory> <path/to/bowtie-shell-script.
+# Usage: ./Batch_bowtie2.sh <path/to/index-directory> <readsDirectory> <path/to/bowtie-shell-script.
 
 indexpath=$1
 
