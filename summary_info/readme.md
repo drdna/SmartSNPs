@@ -6,4 +6,4 @@ SNPs_summary.pl was used to read the filtered VCF files and collate the informat
 
 	Usage: perl SNPs_summary.pl <VCF_directory>
 
-A single output file is created (.summary.txt) which can be interrogated to make sure that SNPs do not occur in linkage blocks (these will typically show up as multiple consecutive SNPs found in the same group of strains (or a single strain). 
+A single output file is created (.summary.txt) which can be interrogated to make sure that SNPs do not occur in linkage blocks - these will typically show up as multiple consecutive SNPs found in the same group of strains (or a single strain). 
