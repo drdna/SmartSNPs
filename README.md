@@ -22,8 +22,9 @@ SmartSNPs is designed to run on individual VCF files owing to the difficulty of 
 
 The program is run as follows:
 
-  perl SmartSNPs <path/to/vcf> <path/to/alignment_strings-file> <AltRefRatio_cutoff> <read_depth_cutoff> <allowable_copy_number>
-        
+```bash
+perl SmartSNPs <path/to/vcf> <path/to/alignment_strings-file> <AltRefRatio_cutoff> <read_depth_cutoff> <allowable_copy_number>
+```        
 **Notes:**
 
   The alignment strings file is created by the **CreateAlignStrings.pl** script
